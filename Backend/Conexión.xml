@@ -1,0 +1,13 @@
+<connectionStrings>
+
+  <add
+    name="RestauranteDB"
+
+    connectionString="server=localhost;
+    database=restaurante_proyecto;
+    uid=root;
+    pwd=Sadrac_1605;"
+
+    providerName="MySql.Data.MySqlClient"/>
+
+</connectionStrings>

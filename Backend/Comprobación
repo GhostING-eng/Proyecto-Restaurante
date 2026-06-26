@@ -1,0 +1,20 @@
+using MySql.Data.MySqlClient;
+using System.Configuration;
+
+string conexion =
+ConfigurationManager.ConnectionStrings["RestauranteDB"].ConnectionString;
+
+MySqlConnection cn = new MySqlConnection(conexion);
+
+try
+{
+    cn.Open();
+
+    Response.Write("Conexión exitosa");
+
+    cn.Close();
+}
+catch(Exception ex)
+{
+    Response.Write(ex.Message);
+}

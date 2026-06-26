@@ -11,6 +11,7 @@ function login() {
     if ((user === "admin" || user === "admin@restaurante.com") && pass === "1234") {
         document.getElementById("msg").innerText = "Bienvenido administrador";
         document.getElementById("msg").style.color = "green";
+        window.location.href = "admin.html";
     } else {
         document.getElementById("msg").innerText = "Credenciales incorrectas";
         document.getElementById("msg").style.color = "red";

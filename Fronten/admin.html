@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Administrador</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>👨‍💼 Panel del Administrador</h1>
+
+    <nav>
+
+        <button onclick="mostrarSeccion('informacion')">Información</button>
+        <button onclick="mostrarSeccion('contacto')">Contacto</button>
+        <button onclick="mostrarSeccion('pedidos')">Pedidos</button>
+        <button onclick="mostrarSeccion('administracion')">Administración</button>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <!-- Información -->
+
+    <section id="informacion">
+
+        <h2>Información del Restaurante</h2>
+
+        <p>
+            Bienvenido al panel del administrador.
+            Desde aquí podrás gestionar el restaurante.
+        </p>
+
+    </section>
+
+    <!-- Contacto -->
+
+    <section id="contacto" class="oculto">
+
+        <h2>Contacto</h2>
+
+        <p> San José, Costa Rica</p>
+
+        <p> 8899-6153</p>
+
+        <p> restaurante@sirius.com</p>
+
+    </section>
+
+    <!-- Pedidos -->
+
+    <section id="pedidos" class="oculto">
+
+        <h2>Pedidos realizados</h2>
+
+        <table>
+
+            <tr>
+                <th>Pedido</th>
+                <th>Cliente</th>
+                <th>Total</th>
+                <th>Estado</th>
+            </tr>
+
+            <tr>
+                <td>#001</td>
+                <td>Juan Pérez</td>
+                <td>₡8 500</td>
+                <td>Pendiente</td>
+            </tr>
+
+            <tr>
+                <td>#002</td>
+                <td>María López</td>
+                <td>₡12 000</td>
+                <td>Preparando</td>
+            </tr>
+
+            <tr>
+                <td>#003</td>
+                <td>Carlos Ruiz</td>
+                <td>₡6 800</td>
+                <td>Entregado</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- Administración -->
+
+    <section id="administracion" class="oculto">
+
+        <h2>⚙ Panel de Administración</h2>
+
+        <div class="panel">
+
+            <div class="opcion">
+                <h3> Administrar Menú</h3>
+                <button>Ingresar</button>
+            </div>
+
+            <div class="opcion">
+                <h3>Gestionar Pedidos</h3>
+                <button>Ingresar</button>
+            </div>
+
+            <div class="opcion">
+                <h3> Usuarios</h3>
+                <button>Ingresar</button>
+            </div>
+
+            <div class="opcion">
+                <h3>Reportes</h3>
+                <button>Ingresar</button>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="admin.js"></script>
+
+</body>
+
+</html>
